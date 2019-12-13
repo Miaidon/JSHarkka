@@ -36,8 +36,14 @@ return (
             name="job"
             value={job}
             onChange={this.handleChange} />
+        <input type="button" valu="Submit" onClick={this.submitForm} />
     </form>
   );
  }
+ submitFORM = () => {
+     this.props.handelSubmit(this.state)
+     this.setState(this.initialState)      
+ }
+ 
 }
 export default Form;
