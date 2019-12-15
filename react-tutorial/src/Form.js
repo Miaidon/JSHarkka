@@ -15,9 +15,9 @@ class Form extends Component {
   }
 
 handleChange = event => {
-    const {nimi, value} = event.target
+    const {name, value} = event.target
     this.setState({
-        [nimi]: value,
+        [name]: value,
     })
 }
 render() {
