@@ -6,8 +6,10 @@ class Table extends Component {
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Job</th>
+            <th>Nimi</th>
+            <th>Lasku</th>
+            <th>Päivämäärä</th>
+            <th>Summa</th>
           </tr>
         </thead>
         <tbody>
