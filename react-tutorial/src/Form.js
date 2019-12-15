@@ -5,36 +5,49 @@ class Form extends Component {
     super(props)
 
     this.initialState = {
-        name: '',
-        job: '',
+        nimi: '',
+        lasku: '',
+        pvmaara: '',
+        summa: '',
     }
 
     this.state = this.initialState
   }
 
 handleChange = event => {
-    const {name, value} = event.target
-
+    const {nimi, value} = event.target
     this.setState({
-        [name]: value,
+        [nimi]: value,
     })
 }
 render() {
-   const {name, job} = this.state;
+   const {nimi, lasku, pvmaara, summa} = this.state;
 
 return ( 
     <form>
-        <label>Name</label>
+        <label>Nimi</label>
             <input
             type="text"
-            name="name"
-            value={name}
+            name="nimi"
+            value={nimi}
             onChange={this.handleChange} />
-        <label>Job</label>
+        <label>Lasku</label>
         <input 
             type="text"
-            name="job"
-            value={job}
+            name="lasku"
+            value={lasku}
+            onChange={this.handleChange} />
+            <label>Päivämäärä</label>
+        <input 
+            type="text"
+            name="pvmaara"
+            value={pvmaara}
+            onChange={this.handleChange} />
+        <label>summa</label>
+        <input 
+            type="text"
+            name="summa"
+            value={summa}
             onChange={this.handleChange} />
         <input type="button" value="Submit" onClick={this.submitForm} />
     </form>
