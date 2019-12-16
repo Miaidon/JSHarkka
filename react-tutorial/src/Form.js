@@ -30,26 +30,26 @@ return (
             type="text"
             name="nimi"
             value={nimi}
-            onChange={this.handleChange} />
+            onChange={this.handleChange} /> <br/>
         <label>Lasku</label>
         <input 
             type="text"
             name="lasku"
             value={lasku}
-            onChange={this.handleChange} />
+            onChange={this.handleChange} /> <br/>
             <label>Päivämäärä</label>
         <input 
             type="text"
             name="pvmaara"
             value={pvmaara}
-            onChange={this.handleChange} />
-        <label>summa</label>
+            onChange={this.handleChange} /> <br/>
+        <label>Summa</label>
         <input 
             type="text"
             name="summa"
             value={summa}
-            onChange={this.handleChange} />
-        <input type="button" value="Submit" onClick={this.submitForm} />
+            onChange={this.handleChange} /> <br/>
+        <input type="button" value="Lähetä" onClick={this.submitForm} />
     </form>
   );
  }
