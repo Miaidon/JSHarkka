@@ -25,27 +25,27 @@ render() {
 
 return ( 
     <form>
-        <label>Nimi</label>
+        <label>Nimi: </label>
             <input
             type="text"
             name="nimi"
             value={nimi}
             onChange={this.handleChange} /> <br/>
-        <label>Lasku</label>
+        <label>Lasku: </label>
         <input 
             type="text"
             name="lasku"
             value={lasku}
             onChange={this.handleChange} /> <br/>
-            <label>Päivämäärä</label>
+            <label>Päivämäärä: </label>
         <input 
-            type="text"
+            type="date"
             name="pvmaara"
             value={pvmaara}
             onChange={this.handleChange} /> <br/>
-        <label>Summa</label>
+        <label>Summa: </label>
         <input 
-            type="text"
+            type="number"
             name="summa"
             value={summa}
             onChange={this.handleChange} /> <br/>
