@@ -25,10 +25,17 @@ table,th, td {
 
 th {
   width: 100px;
-  height: px;
+  height: 50px;
 }
 
-
+img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  
+  width: 200px;
+  height: 200px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
