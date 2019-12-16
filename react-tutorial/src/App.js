@@ -28,12 +28,13 @@ class App extends Component {
             <div className="container">
                 <h1>Taselaskuri</h1>
                 <p>Lisää maksajan nimi, laskuttaja, päivämäärä ja summa.</p>
+                <h3>Lisää</h3>
+                <Form handleSubmit={this.handleSubmit} />
                 <Table
                     characterData={characters}
                     removeCharacter={this.removeCharacter}
                 />
-                <h3>Lisää</h3>
-                <Form handleSubmit={this.handleSubmit} />
+                
             </div>
         );
     }

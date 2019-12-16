@@ -4,11 +4,11 @@ const TableHeader = () => {
     return (
         <thead>
             <tr>
-                <th>Nimi</th>
-                <th>Lasku</th>
-                <th>Päivämäärä</th>
-                <th>Summa</th>
-                <th>Poista</th>
+                <th>Nimi </th>
+                <th>Lasku </th>
+                <th>Päivämäärä </th>
+                <th>Summa </th>
+                <th>Poista </th>
             </tr>
         </thead>
     );
@@ -29,6 +29,7 @@ const TableBody = props => {
 
     return <tbody>{rows}</tbody>;
 }
+
 
 class Table extends Component {
     render() {
